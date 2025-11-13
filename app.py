@@ -13,3 +13,11 @@ logger.critical("Isso é crítico")
 logger.add("log/meu_app.log", rotation="5 MB")
 
 logger.info("Essa mensagem será salva no arquivo")
+
+def minha_funcao():
+    raise ValueError("Um erro aconteceu!")
+
+try:
+    minha_funcao()
+except Exception:
+    logger.exception("Uma exceção foi capturada")

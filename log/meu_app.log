@@ -1,1 +1,13 @@
 2025-11-13 20:08:38.531 | INFO     | __main__:<module>:15 - Essa mensagem será salva no arquivo
+2025-11-13 20:09:24.064 | INFO     | __main__:<module>:15 - Essa mensagem será salva no arquivo
+2025-11-13 20:09:24.065 | ERROR    | __main__:<module>:23 - Uma exceção foi capturada
+Traceback (most recent call last):
+
+> File "C:\Users\mathe\Documents\Workspace\Jornada\Bootcamp - Python6-10\bootcamp_python-aula09\app.py", line 21, in <module>
+    minha_funcao()
+    └ <function minha_funcao at 0x000001AB34E43420>
+
+  File "C:\Users\mathe\Documents\Workspace\Jornada\Bootcamp - Python6-10\bootcamp_python-aula09\app.py", line 18, in minha_funcao
+    raise ValueError("Um erro aconteceu!")
+
+ValueError: Um erro aconteceu!

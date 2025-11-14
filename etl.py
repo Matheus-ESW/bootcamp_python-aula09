@@ -2,8 +2,10 @@ import pandas as pd
 import os
 import glob
 from log import log_dec
+from decorators.timer_dec import time_measure_dec
 
 # FUNCAO DE EXTRACT QUE LE E CONSOLIDA OS JSON
+@time_measure_dec
 @log_dec
 def extract_data(path: str) -> pd.DataFrame:
     arquivos_json = glob.glob(os.path.join(path, '*.json'))
@@ -12,6 +14,7 @@ def extract_data(path: str) -> pd.DataFrame:
     return df_total
 
 # FUNCAO QUE TRANSFORMA
+@time_measure_dec
 @log_dec
 def transform_data(df_total: pd.DataFrame) -> pd.DataFrame:
     df_total["Total"] = df_total["Quantidade"] * df_total["Venda"]
@@ -19,6 +22,7 @@ def transform_data(df_total: pd.DataFrame) -> pd.DataFrame:
     return df_total
 
 # UMA FUNCAO Q DA LOAD EM CSV OU PARQUET
+@time_measure_dec
 @log_dec
 def load_data(format_saida: list, df_total: pd.DataFrame):
 
@@ -28,6 +32,7 @@ def load_data(format_saida: list, df_total: pd.DataFrame):
         if format == 'parquet':
             df_total.to_parquet("transformed_data/data.parquet")
 
+@time_measure_dec
 @log_dec
 def pipeline_calcular_kpi_vendas_consolidado(path: str, formato_saida: list):
 

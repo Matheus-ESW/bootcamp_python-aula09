@@ -14,7 +14,7 @@ logger.add(
 
 # Configuração do logger para arquivo de log
 logger.add(
-                "pipeline_logs/meu_arquivo_de_logs.log",
+                "pipeline_logs/logs_pipeline_calcular_kpi_vendas_consolidado.log",
                 format="{time} {level} {message} {file}",
                 level="INFO"
             )

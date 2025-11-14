@@ -14,12 +14,12 @@ logger.add(
 
 # Configuração do logger para arquivo de log
 logger.add(
-                "meu_arquivo_de_logs.log",
+                "pipeline_logs/meu_arquivo_de_logs.log",
                 format="{time} {level} {message} {file}",
                 level="INFO"
             )
 
-def log_decorator(func):
+def log_dec(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
         logger.info(f"Chamando função '{func.__name__}' com args {args} e kwargs {kwargs}")

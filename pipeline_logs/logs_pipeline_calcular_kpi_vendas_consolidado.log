@@ -1,6 +1,6 @@
-2025-11-14T16:05:39.677230-0300 INFO Chamando função 'pipeline_calcular_kpi_vendas_consolidado' com args ('data', ['csv', 'parquet']) e kwargs {} log.py
-2025-11-14T16:05:39.677732-0300 INFO Chamando função 'extract_data' com args ('data',) e kwargs {} log.py
-2025-11-14T16:05:39.693747-0300 INFO Função 'extract_data' retornou             Produto    Categoria  Quantidade  Venda        Data
+2025-11-14T17:14:33.021189-0300 INFO Chamando função 'pipeline_calcular_kpi_vendas_consolidado' com args ('data', ['csv', 'parquet']) e kwargs {} log.py
+2025-11-14T17:14:33.021189-0300 INFO Chamando função 'extract_data' com args ('data',) e kwargs {} log.py
+2025-11-14T17:14:33.037233-0300 INFO Função 'extract_data' retornou:             Produto    Categoria  Quantidade  Venda        Data
 0    Notebook Gamer  Eletrônicos           3   1500  2023-01-15
 1     Mouse Sem Fio  Eletrônicos          10     30  2023-01-15
 2  Teclado Mecânico  Eletrônicos           5    100  2023-01-15
@@ -10,8 +10,8 @@
 6    Notebook Gamer  Eletrônicos           2   1500  2023-01-17
 7     Mouse Sem Fio  Eletrônicos          14     30  2023-01-17
 8  Teclado Mecânico  Eletrônicos           2    100  2023-01-17 log.py
-2025-11-14T16:05:39.694731-0300 INFO Função 'extract_data' executada em 0.0170 segundos timer_dec.py
-2025-11-14T16:05:39.700229-0300 INFO Chamando função 'transform_data' com args () e kwargs {'df_total':             Produto    Categoria  Quantidade  Venda        Data
+2025-11-14T17:14:33.038239-0300 INFO Função 'extract_data' executada em 0.0171 segundos timer_dec.py
+2025-11-14T17:14:33.042273-0300 INFO Chamando função 'transform_data' com args () e kwargs {'df_total':             Produto    Categoria  Quantidade  Venda        Data
 0    Notebook Gamer  Eletrônicos           3   1500  2023-01-15
 1     Mouse Sem Fio  Eletrônicos          10     30  2023-01-15
 2  Teclado Mecânico  Eletrônicos           5    100  2023-01-15
@@ -21,7 +21,7 @@
 6    Notebook Gamer  Eletrônicos           2   1500  2023-01-17
 7     Mouse Sem Fio  Eletrônicos          14     30  2023-01-17
 8  Teclado Mecânico  Eletrônicos           2    100  2023-01-17} log.py
-2025-11-14T16:05:39.709730-0300 INFO Função 'transform_data' retornou             Produto    Categoria  Quantidade  Venda        Data  Total
+2025-11-14T17:14:33.047745-0300 INFO Função 'transform_data' retornou:             Produto    Categoria  Quantidade  Venda        Data  Total
 0    Notebook Gamer  Eletrônicos           3   1500  2023-01-15   4500
 1     Mouse Sem Fio  Eletrônicos          10     30  2023-01-15    300
 2  Teclado Mecânico  Eletrônicos           5    100  2023-01-15    500
@@ -31,8 +31,8 @@
 6    Notebook Gamer  Eletrônicos           2   1500  2023-01-17   3000
 7     Mouse Sem Fio  Eletrônicos          14     30  2023-01-17    420
 8  Teclado Mecânico  Eletrônicos           2    100  2023-01-17    200 log.py
-2025-11-14T16:05:39.710729-0300 INFO Função 'transform_data' executada em 0.0160 segundos timer_dec.py
-2025-11-14T16:05:39.718806-0300 INFO Chamando função 'load_data' com args (['csv', 'parquet'],             Produto    Categoria  Quantidade  Venda        Data  Total
+2025-11-14T17:14:33.047745-0300 INFO Função 'transform_data' executada em 0.0095 segundos timer_dec.py
+2025-11-14T17:14:33.053783-0300 INFO Chamando função 'load_data' com args (['csv', 'parquet'],             Produto    Categoria  Quantidade  Venda        Data  Total
 0    Notebook Gamer  Eletrônicos           3   1500  2023-01-15   4500
 1     Mouse Sem Fio  Eletrônicos          10     30  2023-01-15    300
 2  Teclado Mecânico  Eletrônicos           5    100  2023-01-15    500
@@ -42,7 +42,7 @@
 6    Notebook Gamer  Eletrônicos           2   1500  2023-01-17   3000
 7     Mouse Sem Fio  Eletrônicos          14     30  2023-01-17    420
 8  Teclado Mecânico  Eletrônicos           2    100  2023-01-17    200) e kwargs {} log.py
-2025-11-14T16:05:39.801714-0300 INFO Função 'load_data' retornou None log.py
-2025-11-14T16:05:39.802216-0300 INFO Função 'load_data' executada em 0.0890 segundos timer_dec.py
-2025-11-14T16:05:39.802715-0300 INFO Função 'pipeline_calcular_kpi_vendas_consolidado' retornou None log.py
-2025-11-14T16:05:39.802715-0300 INFO Função 'pipeline_calcular_kpi_vendas_consolidado' executada em 0.1255 segundos timer_dec.py
+2025-11-14T17:14:33.134434-0300 INFO Função 'load_data' retornou: None log.py
+2025-11-14T17:14:33.134934-0300 INFO Função 'load_data' executada em 0.0862 segundos timer_dec.py
+2025-11-14T17:14:33.134934-0300 INFO Função 'pipeline_calcular_kpi_vendas_consolidado' retornou: None log.py
+2025-11-14T17:14:33.135435-0300 INFO Função 'pipeline_calcular_kpi_vendas_consolidado' executada em 0.1142 segundos timer_dec.py

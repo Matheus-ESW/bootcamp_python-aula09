@@ -11,3 +11,15 @@ Traceback (most recent call last):
     raise ValueError("Um erro aconteceu!")
 
 ValueError: Um erro aconteceu!
+2025-11-14 14:38:43.238 | INFO     | __main__:<module>:15 - Essa mensagem será salva no arquivo
+2025-11-14 14:38:43.238 | ERROR    | __main__:<module>:23 - Uma exceção foi capturada
+Traceback (most recent call last):
+
+> File "C:\Users\mathe\Documents\Workspace\Jornada\Bootcamp - Python6-10\bootcamp_python-aula09\app.py", line 21, in <module>
+    minha_funcao()
+    └ <function minha_funcao at 0x00000174B61E5E40>
+
+  File "C:\Users\mathe\Documents\Workspace\Jornada\Bootcamp - Python6-10\bootcamp_python-aula09\app.py", line 18, in minha_funcao
+    raise ValueError("Um erro aconteceu!")
+
+ValueError: Um erro aconteceu!
